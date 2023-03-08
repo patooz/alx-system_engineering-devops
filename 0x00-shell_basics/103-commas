@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1afq --group-directories-first | sed -z 's/\n/, /g; s/\(.*\), /\1\n/'
+ls -a1 | sed -e 's/^\.$/\&./' -e 's/^\.\.$/\&./' -e 's/^[^[:alnum:]]/\&./' | LC_ALL=C sort -d -f -t$'\n' -k1.1 | sed -e 's/$/,\ /' -e '$s/,\ $/\n/'
