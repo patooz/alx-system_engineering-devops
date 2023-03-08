@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1afp -v |sed -e 's/\(.*\)\//\1\//g'| tr '\n' ','
+ls -1amfp -v |sed -e 's/\(.*\)\//\1\//g'| tr '' '\n'
