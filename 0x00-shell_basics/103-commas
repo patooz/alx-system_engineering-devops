@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1Ap | { LC_ALL=C; sed s/([^/])$/1// | tr n , | sed s/,$/n/; }
+printf '%s\n' .[[:alnum:]]* * | LC_COLLATE=C sort -d -f -k1.1n -k1.2 | sed -e 's/\([^\/]\)$/\1\//' | paste -sd ","
