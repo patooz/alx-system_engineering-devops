@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a1 | grep -v '^.$' | sort -k1.1n -k1.2 | sed -e 's/^\.\///' -e 's/$/\//' | tr '\n' ','
+ls -1apv --group-directories-first | sed ':a;N;$!ba;s/\n/, /g;s/\([^\/]\)$/\1\//' | LC_COLLATE=C sort -d -f -k1.1 | tr -d '\r'
