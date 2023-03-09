@@ -7,3 +7,4 @@ chmod u+x hello - adds execute permission to the owner of the file hello
 6-multiple_permissions - script that adds execute permission to the owner and the group owner, and read permission to other users, to the file hello.
 chmod ugo+x hello - adds execution permission to the owner, the group owner and the other users, to the file hello
 chmod 007 hello - no permission to the owner and the group, but gives all permissions to other users
+chmod 751 hello - sets the mode of the file hello to -rwxr-x-wx
