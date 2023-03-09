@@ -9,3 +9,4 @@ chmod ugo+x hello - adds execution permission to the owner, the group owner and 
 chmod 007 hello - no permission to the owner and the group, but gives all permissions to other users
 chmod 751 hello - sets the mode of the file hello to -rwxr-x-wx
 chmod $(stat -c "%a" olleh) hello - sets the mode of the file hello the same as olleh’s mode
+find . -type d -exec chmod ugo+x {} + - adds execute permission to all subdirectories of the current directory for the owner, the group owner and all other users.
