@@ -11,3 +11,4 @@ chmod 751 hello - sets the mode of the file hello to -rwxr-x-wx
 chmod $(stat -c "%a" olleh) hello - sets the mode of the file hello the same as olleh’s mode
 find . -type d -exec chmod ugo+x {} + - adds execute permission to all subdirectories of the current directory for the owner, the group owner and all other users.
 mkdir -m 751 my_dir - creates a directory called my_dir with permissions 751 in the working directory.
+chgrp school hello - a script that changes the group owner to school for the file hello
