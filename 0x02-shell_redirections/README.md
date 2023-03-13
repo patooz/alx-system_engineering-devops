@@ -12,3 +12,5 @@
 find . -mindepth 1 -type d | wc -l a script that counts the number of directories and sub-directories in the current directory.
 12-newest_files - a script that displays the 10 newest files in the current directory.
 sort | uniq -u - a script that takes a list of words as input and prints only words that appear exactly once.
+grep root /etc/passwd - Display lines containing the pattern “root” from the file /etc/passwd
+grep -c bin /etc/passwd - Display the number of lines that contain the pattern “bin” in the file /etc/passwd
