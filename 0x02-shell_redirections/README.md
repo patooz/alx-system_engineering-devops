@@ -22,3 +22,4 @@ tr -d Cc - a script that removes all letters c and C from input.
 rev - a script that reverse its input.
 cat /etc/passwd | cut -d: -f1,6 | sort - a script that displays all users and their home directories, sorted by users.
 100-empty_casks - a command that finds all empty files and directories in the current directory and all sub-directories.
+find . -type f -name "*.gif" | rev | cut -d/ -f 1 | cut -d. -f 2- | rev |sort -V -f -> a script that lists all the files with a .gif extension in the current directory and all its sub-directories.
