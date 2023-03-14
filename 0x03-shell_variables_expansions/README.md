@@ -3,3 +3,4 @@ echo hello $USER - a script that prints hello user, where user is the current Li
 export PATH="$PATH:/action" - Add /action to the PATH. /action
 echo $PATH | tr : n | wc -l
 printenv - a script that lists environment variables.
+set - a script that lists all local variables and environment variables, and functions.
